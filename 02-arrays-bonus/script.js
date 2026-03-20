@@ -10,6 +10,7 @@ const teachers = [
 
 // ✅ 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
+
 const reversedTeachers = [];                                // Crea un nuovo array per memorizzare gli insegnanti invertiti
 for (let i = teachers.length - 1; i >= 0; i--) {            // Itera attraverso l'array teachers partendo dall'ultimo elemento
   const teacher = teachers[i];                              // Ottieni l'insegnante corrente
@@ -20,6 +21,7 @@ console.log(reversedTeachers);                              // Stampa l'array re
 
 // ✅ 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
+
 const longNames = [];                                       // Crea un nuovo array per memorizzare gli insegnanti con nomi lunghi
 for (let i = 0; i < teachers.length; i++) {                 // Itera attraverso l'array teachers
   const teacher = teachers[i];                              // Ottieni l'insegnante corrente
@@ -31,6 +33,7 @@ console.log(longNames);                                     // Stampa l'array lo
 
 
 // ✅ 3. Rimuovi 'Ed' dall'array teachers
+
 const teachersWithoutEd = [];                               // Crea un nuovo array per memorizzare gli insegnanti senza 'Ed'  
 for (let i = 0; i < teachers.length; i++) {                 // Itera attraverso l'array teachers
   const teacher = teachers[i];                              // Ottieni l'insegnante corrente
@@ -40,9 +43,9 @@ for (let i = 0; i < teachers.length; i++) {                 // Itera attraverso 
 }
 console.log(teachersWithoutEd);                             // Stampa l'array teachersWithoutEd per verificare il risultato
 
-
 // ✅ 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
+
 let isFabioPresent = false;                                 // Inizializza la variabile isFabioPresent a false
 for (let i = 0; i < teachers.length; i++) {                 // Itera attraverso l'array teachers
   const teacher = teachers[i];                              // Ottieni l'insegnante corrente
@@ -54,6 +57,8 @@ for (let i = 0; i < teachers.length; i++) {                 // Itera attraverso 
 console.log(isFabioPresent);                                // Stampa il valore di isFabioPresent per verificare se 'Fabio' è presente nell'array teachers
 
 
-// ✅ 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = teachers.join(', ');
-console.log(teachersString);
+// ✅ 5. Unisci tutti gli insegnanti nell'array teachers in una stringa separata da virgole
+// e salvala nella variabile teachersString
+
+const teachersString = teachers.join(', ');                 // Utilizza il metodo join per unire tutti gli insegnanti in una stringa separata da virgole
+console.log(teachersString);                                // Stampa la stringa teachersString per verificare il risultato     
