@@ -43,14 +43,16 @@ console.log(teachersWithoutEd);                             // Stampa l'array te
 
 // ✅ 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-let isFabioPresent = false;
-for (let i = 0; i < teachers.length; i++) {
-  if (teachers  === 'Fabio') {
-    isFabioPresent = true;
-    break;
+let isFabioPresent = false;                                 // Inizializza la variabile isFabioPresent a false
+for (let i = 0; i < teachers.length; i++) {                 // Itera attraverso l'array teachers
+  const teacher = teachers[i];                              // Ottieni l'insegnante corrente
+  if (teacher  === 'Fabio') {                               // Verifica se l'insegnante corrente è 'Fabio'
+    isFabioPresent = true;                                  // Se la condizione è vera, imposta isFabioPresent a true
+    break;                                                  // Esci dal ciclo una volta trovato 'Fabio'
   }
 }
-console.log(isFabioPresent);
+console.log(isFabioPresent);                                // Stampa il valore di isFabioPresent per verificare se 'Fabio' è presente nell'array teachers
+
 
 // ✅ 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = teachers.join(', ');
