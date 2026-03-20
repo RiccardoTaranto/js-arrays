@@ -31,19 +31,21 @@ console.log(longNames);                                     // Stampa l'array lo
 
 
 // ✅ 3. Rimuovi 'Ed' dall'array teachers
-const teachersWithoutEd = [];
-for (let i = 0; i < teachers.length; i++) {
-  if (teachers[i] !== 'Ed') {
-    teachersWithoutEd.push(teachers[i]);
+const teachersWithoutEd = [];                               // Crea un nuovo array per memorizzare gli insegnanti senza 'Ed'  
+for (let i = 0; i < teachers.length; i++) {                 // Itera attraverso l'array teachers
+  const teacher = teachers[i];                              // Ottieni l'insegnante corrente
+  if (teacher !== 'Ed') {                                   // Verifica se l'insegnante corrente non è 'Ed'
+    teachersWithoutEd.push(teacher);                        // Se la condizione è vera, aggiungi l'insegnante al nuovo array teachersWithoutEd
   }
 }
-console.log(teachersWithoutEd);
+console.log(teachersWithoutEd);                             // Stampa l'array teachersWithoutEd per verificare il risultato
+
 
 // ✅ 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 let isFabioPresent = false;
 for (let i = 0; i < teachers.length; i++) {
-  if (teachers[i] === 'Fabio') {
+  if (teachers  === 'Fabio') {
     isFabioPresent = true;
     break;
   }
